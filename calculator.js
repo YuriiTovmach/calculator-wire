@@ -1,6 +1,7 @@
 function calc(){
+  'use strict';
       const PI = 3.14;
-      var l, d, g, result;
+      let l, d, g, result;
 
 
     l = document.getElementById('n1').value;
@@ -22,8 +23,8 @@ function calc(){
 }
 
 function price(){
-
-      var m, pr;
+  'use strict';
+      let m, pr;
 
     m = document.getElementById('n4').value;
   m = Number.parseFloat(m);
