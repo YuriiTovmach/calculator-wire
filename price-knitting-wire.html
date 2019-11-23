@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <link rel="stylesheet" href="css/calculator.css" />
+
+
+</head>
+
+<body>
+
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li><a href="https://provoloka.inf.ua" style="color:blue;">&#8594;Главная</a></li>
+                                    <li><a href="https://provoloka.inf.ua/provoloka-knitting.html" style="color:blue;">&#8594;Проволока вязальная</a></li>
+                                    <li>
+                                        <dialog style="height:550px;width:400px;overflow-y:scroll;">
+
+                                            <hr>
+                                            <h2 style="cursor:move">Калькулятор расчета веса проволоки</h2>
+                                            <hr>
+                                             <h5 style="font-size:15px; text-align: center; font-family: Georgia; font-weight:bold; color:#366A5F;">&deg; дробные числа вводить с точкой а не запятой &deg;</h5>
+                                            <hr>
+
+                                            <p>L: <input type="text" id="n1" placeholder="длина (в метрах)" style="cursor:progress; font-family: Georgia;" title="дробные числа вводить с точкой а не запятой!"></p>
+                                            <hr>
+                                            <p>D: <input type="text" id="n2" placeholder="диаметр (в мм.)" style="cursor:help; font-family: Georgia;" title="дробные числа вводить с точкой а не запятой!"></p>
+                                            <hr>
+                                            <p style="cursor:e-resize;" title="для этих сталей: ( ст 3, ст 10, ст 20, ст 40Х, ст 45, ст 65, ст 65Г, ст 09Г2С, ст 10ХСНД, ст 12Х1МФ, ст ШХ15, ст У7, ст У8, ст У8А, ст У10, ст У10А, ст У12А ) == ( введите это число: 7850 ) ">G: <input type="text" id="n3" placeholder="плотность &#8594; 7850" style="cursor:crosshair; color:#f0; font-family: Georgia;" title="для этих сталей: ( ст 3, ст 10, ст 20, ст 40Х, ст 45, ст 65, ст 65Г, ст 09Г2С, ст 10ХСНД, ст 12Х1МФ, ст ШХ15, ст У7, ст У8, ст У8А, ст У10, ст У10А, ст У12А ) == ( введите это число: 7850 )"></p>
+                                            <hr>
+                                            <button onclick="calc()" style="cursor:pointer; font-family: Georgia;">Расчитать</button>
+                                            <hr>
+                                            <p id="res" style="cursor:n-resize; font-family: Georgia; font-weight:bold;">Результат "m" (kg):</p>
+                                            <hr>
+
+                                            <h2 style="cursor:wait;">Формула расчета веса проволоки (1-го метра)</h2>
+                                            <p>Где:<br>
+                                                <b style="cursor:e-resize">m</b> – рассчитываемый вес 1-го метра;<br>
+                                                <b>P</b> – константа (3,14);<br>
+                                                <b>D</b> – диаметр;<br>
+                                                <b>G</b> – плотность материала, тут берутся следующие параметры:<br>
+                                                <b title="сталь: ст 3, ст 10, ст 20, ст 40Х, ст 45, ст 65, ст 65Г, ст 09Г2С, ст 10ХСНД, ст 12Х1МФ, ст ШХ15, ст У7, ст У8, ст У8А, ст У10, ст У10А, ст У12А">Сталь</b> – 7850;<br>
+                                                <b style="cursor:ne-resize">Медь</b> – 8890;<br>
+                                                <b style="cursor:nw-resize">Алюминий</b> – 2703.<br> Плотность материала можно узнать в ГОСТах. <br>
+                                            </p>
+
+                                            <div style="height:60px;width:162px;" class="calculator" title="формула калькулятора проволоки"></div>
+
+                                            <hr>
+                                            <h2 style="cursor:move">Калькулятор расчета цены проволоки</h2>
+                                            <hr>
+                                            <h5 style="font-size:15px; text-align: center; font-family: Georgia; font-weight:bold; color:#366A5F;">&deg; дробные числа вводить с точкой а не запятой &deg;</h5>
+                                            <hr>
+
+
+                                            <p style="text-indent: 10px;">Вес: <input type="text" id="n4" placeholder="в кг." style="cursor:help; font-family: Georgia;" title="дробные числа вводить с точкой а не запятой!"></p>
+                                            <hr>
+                                            <p>Цена: <input type="text" id="n5" placeholder="цена в грн/кг." style="cursor:help; font-family: Georgia;" title="дробные числа вводить с точкой а не запятой!"></p>
+                                            <hr>
+                                            <p><button onclick="price()" style="cursor:pointer; font-family: Georgia;">Расчитать</button></p>
+
+                                            <hr>
+                                            <p id="res_2" style="cursor:n-resize; font-family: Georgia; font-weight:bold;">Результат (в грн/кг.):</p>
+                                            <hr>
+
+                                            <button style="color:red; cursor:crosshair;" id="close2">Закрыть &times;</button>
+                                        </dialog>
+                                        <button style="color:red; cursor:pointer;" id="show2" title="калькулятор расчета веса и цены проволоки">&#9824;Калькулятор&#9824;</button>
+
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+    <script src="js/calculator.js"></script>
+
+
+
+
+</body>
+
+</html>
